@@ -4,11 +4,13 @@ const helpers = require('dustjs-helpers');
 const fs = require('fs');
 
 const app = express();
-const port = 3000;
+
+var port = process.env.PORT || 3000;
+var ip = process.env.BIND_ADDRESS || '0.0.0.0';
 
 app.get('/', renderTemplate);
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, ip, () => console.log(`Example app listening on port ${ip}:${port}!`));
 
 function renderTemplate(req, res) {
   var src = fs.readFileSync('./templates/main.dust', 'utf8');

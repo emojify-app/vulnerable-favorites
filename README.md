@@ -9,6 +9,11 @@ There is a deliberate vulnerability in this application which allows remote code
 # WARNING
 This service is for demonstration purposes only and should not be deployed to a production environment!
 
+# Configuration
+The following environment variables are exposed to configure the service.
+* PORT - bind port
+* BIND_ADDRESS - IP address to bind to 
+
 # Running the service - simple example
 
 First start the service:
