@@ -2,7 +2,7 @@
   "dependencies": {
     "dustjs-helpers": "1.4.0",
     "dustjs-linkedin": "2.5.0",
-    "express": "^4.16.4"
+    "express": "^4.17.3"
   },
   "scripts": {
     "start": "node ./app.js"
